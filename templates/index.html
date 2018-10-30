@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+ 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="../css/estilo.css" type="texto/css" media="screen" />
+		<link rel="shortcut icon" href="../imgs/ufop_0_0.gif" type="image/gif" />
+		<script src="../js/facebook.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<title>UFOP - Processamento de Linguagem Natural</title>
+	</head>
+	
+	<body>					
+		<div>
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class='container'>
+					<div style="float:left;">
+						<img id='avatar' src='../imgs/desconhecido.jpg'/>
+					</div>
+					<div>
+						<p class="navbar-text"><b id='texto_ola'>Olá, <span id='nome_visitante'>visitante</span>!</b></p>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class='container' id='principal_conteudo' style="display: none;">
+			<div>
+				<div id='exercicios'>
+					<div id='pergunta' >
+						<div id='conteudo_topo' class='container'>
+							<h4 id='super_enunciado'>
+								<span class="label label-primary" id='label_exercicio'>Exercício 1</span>
+							</h4>
+							<h2>
+								<p align='justify'>Para a sentença <span style='caret-color: #f1f46a;'><i><b id='sentenca'></b></i></span> qual o significado mais indicado para o termo <i><b id='termo_analisado'></b></i>?
+							</h2>
+						</div>
+          			</div>
+					<div id='respostas'>
+						<div class="list-group container" id="alternativas">
+						</div>
+          			</div>
+				</div>
+				<div id='login'>
+				</div>
+			</div>
+			<div class='container' style="margin-bottom: 15px;">
+				<nav aria-label="Page navigation" id='navegacao'>
+				</nav>
+			</div>
+    </div>
+		<div class='container justify-content-center align-items-center' id='div_carregando' style="display: none;">
+        <img src="../imgs/loading.gif" alt="Carregando..." height="100" width="100">
+    </div>
+		<div class='container' id='div_concluido' style="display: none;">
+				<div class="alert alert-success" role="alert">
+					<b>Suas respostas foram armazenadas com sucesso. Muito obrigado, <span id='nome_agradecimento'></span>!</b>
+				</div>
+		</div>
+		<div class='container' id='div_acessorepetido' style="display: none;">
+				<div class="alert alert-warning" role="alert">
+					<b>Você já respondeu a este questionário!</b>
+				</div>
+		</div>
+		<div class='container' id='div_login' style="display: none;">
+				<div class="alert alert-info" role="alert">
+					<b id='msg_login'>É necessário realizar login no Facebook para preencher os exercícios!</b>
+				</div>
+				<div>
+					<button class="btn btn-primary" type="button" onclick="FB.login();" align='center'>
+						Clique aqui para autenticar pelo <b>Facebook</b>
+					</button>					
+				</div>
+		</div>
+	</body>
+</html> 

@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+ 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="../css/estilo.css" type="texto/css" media="screen" />
+		<link rel="shortcut icon" href="../imgs/ufop_0_0.gif" type="image/gif" />
+		<script src="../js/facebook.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<title>Exercícios</title>
+	</head>
+
+	<body>					
+		<div>
+			<nav class="navbar navbar-inverse navbar-static-top"></nav>
+		</div>
+		<div class='container'>
+			<div>
+				<div id='exercicios'>
+					<div id='pergunta'></div>
+					<div id='$respostas'>
+						<div class="list-group" id="alternativas">
+							<img src="../imgs/loading.gif" alt="Carregando..." height="100" width="100">
+						</div>
+					</div>
+				</div>
+				<div id='login'>
+					
+				</div>
+			</div>
+			<div class='container' style="margin-bottom: 15px;">
+				<nav aria-label="Page navigation" id='navegacao'>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html> 

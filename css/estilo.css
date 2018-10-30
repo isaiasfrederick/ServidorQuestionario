@@ -1,0 +1,15 @@
+.botoes_inferiores{
+	height: 50px;
+}
+
+.voltar {
+	.botoes_inferiores;
+	float:left;
+	width: 40%;
+}
+
+.avancar {
+	.botoes_inferiores;
+	float:right;
+	width: 60%;
+}
